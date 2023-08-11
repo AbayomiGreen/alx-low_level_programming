@@ -1,10 +1,11 @@
-#include<stdlib.h>
-#include<stdio.h>
-#include<time.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
- * main - Entry Point 
+ * main - printing random no and giving info abt its xter
  *
- * Return: 0 (success)
+ * Return: always (0)
+ *
  */
 int main(void)
 {
@@ -14,6 +15,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	lastd = n % 10;
+
 	if (lastd > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
